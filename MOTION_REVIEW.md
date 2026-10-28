@@ -1,4 +1,10 @@
-# Latest cinematic video motion
+# Herbal oil advertisement motion
+
+The current sequence uses every native frame from `Herbal_oil_bottle_advertisement_3860f7b0_1080p_gwr_video_mvp.mp4`, in the new `public/scenes/herbal-oil-advertisement/` folder. The original video's bowl, ingredients, golden pour, cream-label bottle, black cap and final reveal replace the earlier film. Every exported frame remains 1920 x 1080 in lossless WebP and its decoded RGB hash must match the source. Poster and shop imagery come from the same new video.
+
+The active manifest records exact native frame count, duration and phase ranges. Forward and reverse scroll playback use the full sequence, and reduced motion keeps the first frame. See [the current review](analysis/herbal-oil-advertisement/README.md) for source timestamps and contact sheets.
+
+## Previous retained sequence
 
 The current sequence imports every frame of the user's new 1080p video. It replaces the previous generated-art animation. Detailed processing and provenance are in [the current video review](analysis/cinematic-hair-oil/README.md).
 

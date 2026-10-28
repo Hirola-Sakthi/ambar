@@ -1,6 +1,14 @@
-# Latest cinematic hair oil video
+# Herbal oil advertisement frames
 
-The active sequence uses only the user's latest `An_ultra-realistic,_continuous_cinematic_hair_df569112_1080p.mp4`.
+The active sequence uses `Herbal_oil_bottle_advertisement_3860f7b0_1080p_gwr_video_mvp.mp4`. Every native frame is in the new `public/scenes/herbal-oil-advertisement/` folder, at 1920 x 1080 and 24 fps, encoded as lossless WebP. No resizing, retouching, sharpening, watermark removal, interpolation or generated artwork is applied. Every exported image's decoded RGB hash is checked against an independent source decode before activation. The source video already contains the desired bottle and assembly animation.
+
+The animation, poster and shop image follow `src/sequenceManifest.json`, including its source-hash cache revision. The poster copies the first frame and the shop image copies the final frame. The canvas supports up to 2x display density and high-quality smoothing. Previous frame folders and uploaded ZIPs remain intact.
+
+Reproduce with `python -B scripts/import_herbal_video.py`; `--source <path>` changes the input and `--resume` reuses completed images while still auditing every frame. See [the current source review](analysis/herbal-oil-advertisement/README.md) for frame counts, native timestamps, hashes and all-frame contact sheets.
+
+## Previous retained cinematic source
+
+The historical notes below describe the previous video and its retained assets. The current sequence above supersedes those paths and processing steps.
 
 ## Assets and fidelity
 

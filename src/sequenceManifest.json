@@ -1,13 +1,13 @@
 {
-  "frameCount": 240,
+  "frameCount": 239,
   "width": 1920,
   "height": 1080,
-  "directory": "scenes/cinematic-hair-oil",
-  "revision": "cinematic-native-v2",
-  "fps": 24,
-  "durationSeconds": 10,
-  "source": "An_ultra-realistic,_continuous_cinematic_hair_df569112_1080p.mp4",
-  "processing": "All native frames; lossless WebP; fixed corner watermark removal",
+  "directory": "scenes/herbal-oil-advertisement",
+  "revision": "herbal-native-a601197f96ee",
+  "fps": 24.0,
+  "durationSeconds": 9.958333333333334,
+  "source": "Herbal_oil_bottle_advertisement_3860f7b0_1080p_gwr_video_mvp.mp4",
+  "processing": "Every native frame; lossless WebP; all exported RGB hashes match source decode; no retouching or resizing",
   "phases": [
     {
       "name": "empty-bowl",
@@ -27,17 +27,17 @@
     {
       "name": "bottle-fill-and-label",
       "start": 108,
-      "end": 179
+      "end": 167
     },
     {
       "name": "cap",
-      "start": 180,
+      "start": 168,
       "end": 203
     },
     {
       "name": "hero",
       "start": 204,
-      "end": 239
+      "end": 238
     }
   ]
 }

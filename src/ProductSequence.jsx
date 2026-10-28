@@ -77,8 +77,9 @@ export default function ProductSequence() {
       }
     }
     const resize = () => {
-      const dpr=Math.min(devicePixelRatio||1,1.5)
+      const dpr=Math.min(devicePixelRatio||1,2)
       el.width=Math.round(el.clientWidth*dpr); el.height=Math.round(el.clientHeight*dpr)
+      ctx.imageSmoothingEnabled=true; ctx.imageSmoothingQuality='high'
       drawn=-1; schedule()
     }
     const observer=new ResizeObserver(resize); observer.observe(el); resize()
@@ -119,14 +120,14 @@ export default function ProductSequence() {
   return <section id="top" className="sequence" ref={section} aria-label="The Ayurvedic hair oil story">
     <span id="formula" className="scene-anchor anchor-formula"/><span id="craft" className="scene-anchor anchor-craft"/><span id="result" className="scene-anchor anchor-result"/>
     <div className="film-stage">
-      <img className="film-poster" src={`${import.meta.env.BASE_URL}${sequence.directory}/poster.webp`} alt="An empty white ceramic bowl on a sunlit wooden table, surrounded by softly focused leaves" fetchPriority="high"/>
+      <img className="film-poster" src={`${import.meta.env.BASE_URL}${sequence.directory}/poster.webp?v=${sequence.revision}`} alt="An empty ceramic bowl on a sunlit wooden table in a lush garden" fetchPriority="high"/>
       <canvas ref={canvas} className="film-canvas" aria-hidden="true"/><div className="film-shade"/>
-      <div className="scene-copy intro-copy"><p className="eyebrow">LUMORA · AYURVEDIC HAIR OIL</p><h1>Rooted<br/>in ritual.</h1><p>A botanical story.<br/>A moment for your hair.</p><a className="pill-button" href="#shop">Discover the oil <span aria-hidden="true">↗</span></a><a className="underlined" href="#formula">Follow the ingredients</a></div>
+      <div className="scene-copy intro-copy"><p className="eyebrow">DR. YOGITHA'S · AYURVEDIC HAIR OIL</p><h1>Rooted<br/>in ritual.</h1><p>A botanical story.<br/>A moment for your hair.</p><a className="pill-button" href="#shop">Discover the oil <span aria-hidden="true">↗</span></a><a className="underlined" href="#formula">Follow the ingredients</a></div>
       <div className="scene-copy formula-copy"><p className="eyebrow">THE BOTANICAL STORY</p><h2>From nature.<br/><span>With care.</span></h2><p>Leaves, flowers and golden tones.<br/>An Ayurvedic-inspired ritual.</p></div>
       <div className="scene-copy filling-copy"><p className="eyebrow">THE GOLDEN POUR</p><h2>A slower<br/><span>kind of care.</span></h2><p>Follow every golden drop.<br/>From the bowl to the bottle.</p></div>
       <div className="scene-copy packaging-copy"><p className="eyebrow">THE FINAL TOUCH</p><h2>Care,<br/><span>beautifully bottled.</span></h2><p>A botanical ritual takes shape.</p></div>
       <div className="scene-copy result-copy"><p className="eyebrow">YOUR HAIR RITUAL</p><h2>Make time<br/><span>for your roots.</span></h2><p>Ayurvedic hair oil.<br/>A little time for yourself.</p><a className="pill-button dark-button" href="#shop">Meet the hair oil <span aria-hidden="true">↗</span></a></div>
-      <a href="#formula" className="scroll-cue">SCROLL <span aria-hidden="true">↓</span></a><span className="film-caption">LUMORA / AYURVEDIC HAIR OIL</span><div className="film-progress" aria-hidden="true"/>
+      <a href="#formula" className="scroll-cue">SCROLL <span aria-hidden="true">↓</span></a><span className="film-caption">DR. YOGITHA'S / AYURVEDIC HAIR OIL</span><div className="film-progress" aria-hidden="true"/>
       {failed && <p className="film-error" role="status">Showing the still image. Discover the hair oil below.</p>}
     </div>
   </section>
