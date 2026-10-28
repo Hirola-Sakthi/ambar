@@ -1,0 +1,43 @@
+{
+  "frameCount": 240,
+  "width": 1920,
+  "height": 1080,
+  "directory": "scenes/cinematic-hair-oil",
+  "revision": "cinematic-native-v2",
+  "fps": 24,
+  "durationSeconds": 10,
+  "source": "An_ultra-realistic,_continuous_cinematic_hair_df569112_1080p.mp4",
+  "processing": "All native frames; lossless WebP; fixed corner watermark removal",
+  "phases": [
+    {
+      "name": "empty-bowl",
+      "start": 0,
+      "end": 23
+    },
+    {
+      "name": "ingredients",
+      "start": 24,
+      "end": 71
+    },
+    {
+      "name": "bowl-pour",
+      "start": 72,
+      "end": 107
+    },
+    {
+      "name": "bottle-fill-and-label",
+      "start": 108,
+      "end": 179
+    },
+    {
+      "name": "cap",
+      "start": 180,
+      "end": 203
+    },
+    {
+      "name": "hero",
+      "start": 204,
+      "end": 239
+    }
+  ]
+}
